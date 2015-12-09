@@ -7,6 +7,8 @@ import (
 
 type Device struct {
 	Family string
+	Brand  string
+	Model  string
 }
 
 type DevicePattern struct {
@@ -31,8 +33,25 @@ func (dvcPattern *DevicePattern) Match(line string, dvc *Device) {
 		dvc.Family = matches[1]
 	}
 	dvc.Family = strings.TrimSpace(dvc.Family)
+
+	if len(dvcPattern.BrandReplacement) > 0 {
+		dvc.Brand = allMatchesReplacement(dvcPattern.BrandReplacement, matches)
+	} else if groupCount >= 2 {
+		dvc.Brand = matches[1]
+	}
+	dvc.Brand = strings.TrimSpace(dvc.Brand)
+
+	if len(dvcPattern.ModelReplacement) > 0 {
+		dvc.Model = allMatchesReplacement(dvcPattern.ModelReplacement, matches)
+	} else if groupCount >= 2 {
+		dvc.Model = matches[1]
+	}
+	dvc.Model = strings.TrimSpace(dvc.Model)
 }
 
 func (dvc *Device) ToString() string {
-	return dvc.Family
+	if strings.HasPrefix(dvc.Family, "HW-") && strings.ToUpper(dvc.Brand) == "HUAWEI" {
+		dvc.Family = dvc.Family[3:]
+	}
+	return strings.ToUpper(dvc.Family)
 }

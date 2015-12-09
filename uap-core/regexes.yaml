@@ -2054,6 +2054,24 @@ device_parsers:
     brand_replacement: 'Huawei'
     model_replacement: '$1'
 
+  #########HuaWei personal uainfo
+  - regex: '((?:HUAWEI|Huawei)[ \-]?)(MediaPad)_[A-Z]+/\d+.\d+'
+    device_replacement: '$1$2'
+    brand_replacement: 'Huawei'
+    model_replacement: '$2'
+  - regex: '((?:HUAWEI[ _]?|Huawei[ _])?Ascend[ _])([^;/]+)_[A-Z]+/\d+.\d+'
+    device_replacement: '$1$2'
+    brand_replacement: 'Huawei'
+    model_replacement: '$2'
+  - regex: '((?:HUAWEI|Huawei)[ _\-]?)((?:G700-|MT-)[^;/]+)_[A-Z]+/\d+.\d+'
+    device_replacement: '$1$2'
+    brand_replacement: 'Huawei'
+    model_replacement: '$2'
+  - regex: '((?:HUAWEI|Huawei)[ _\-]?)([^;/]+)_[A-Z]+/\d+.\d+'
+    device_replacement: '$1$2'
+    brand_replacement: 'Huawei'
+    model_replacement: '$2'
+
   #########
   # HTC
   # @ref: http://www.htc.com/www/products/
@@ -3841,8 +3859,25 @@ device_parsers:
   # XiaoMi
   # @ref: http://www.xiaomi.com/event/buyphone
   #########
-  - regex: '; *((MI|HM|MI-ONE|Redmi)[ -](NOTE |Note )?[^;/]*) Build/'
     device_replacement: 'XiaoMi $1'
+    brand_replacement: 'XiaoMi'
+    model_replacement: '$1'
+  - regex: '; *((MI|HM|MI-ONE|Redmi|mi|hm|mi-one|redmi)[ -](NOTE |Note |note )?[^;/]*) Build/'
+    device_replacement: 'XiaoMi $1'
+    brand_replacement: 'XiaoMi'
+    model_replacement: '$1'
+  - regex: '; *((MI|HM|MI-ONE|Redmi|mi|hm|mi-one|redmi)[ -](NOTE |Note |note )?[^;/]*) MIUI/'
+    device_replacement: 'XiaoMi $1'
+    brand_replacement: 'XiaoMi'
+    model_replacement: '$1'
+  - regex: '; (gucci|([0-9]+)) MIUI/'
+    device_replacement: '$1'
+    brand_replacement: 'XiaoMi'
+    model_replacement: '$1'
+
+
+  - regex: '(?:Xiaomi)_(\d+)_TD(:?-\w+)?/'
+    device_replacement: '$1'
     brand_replacement: 'XiaoMi'
     model_replacement: '$1'
 
