@@ -1596,7 +1596,7 @@ device_parsers:
   # @ref: ??
   #########
   - regex: '; *([^;/]*)Coolpad[ _]([^;/]+) Build'
-    device_replacement: '$1$2'
+    device_replacement: 'Coolpad $1$2'
     brand_replacement: 'Coolpad'
     model_replacement: '$1$2'
 
@@ -3874,7 +3874,10 @@ device_parsers:
     device_replacement: '$1'
     brand_replacement: 'XiaoMi'
     model_replacement: '$1'
-
+  - regex: '; *([^;/]*) MIUI/'
+    device_replacement: '$1'
+    brand_replacement: 'Generic'
+    model_replacement: '$1'
 
   - regex: '(?:Xiaomi)_(\d+)_TD(:?-\w+)?/'
     device_replacement: '$1'
