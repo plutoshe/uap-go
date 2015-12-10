@@ -46,7 +46,7 @@ func main() {
 	// The "New" function will create a new UserAgent object and it will parse
 	// the given string. If you need to parse more strings, you can re-use
 	// this object and call: ua.Parse("another string")
-	file, err := os.Open("ans.csv") // For read access.
+	file, err := os.Open("../data/correlation-uainfo.csv") // For read access.
 	if err != nil {
 		log.Fatal(err)
 	}

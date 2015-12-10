@@ -1,17 +1,31 @@
 package main
 
 import (
-	"../uaparser" // You could change this to a github repo as well
+	"bufio"
+	"flag"
 	"fmt"
 	"os"
+
+	"../uaparser" // You could change this to a github repo as well
 )
 
 func main() {
-	testStr := "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en-us; Silk/1.1.0-80) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16 Silk-Accelerated=true"
-	regexFile := "../../regexes.yaml"
-	if len(os.Args) > 1 {
-		regexFile = os.Args[1]
+	flag.Parse()
+	args := flag.Args()
+	var testStr string
+	if len(args) > 0 {
+		testStr = args[0]
+	} else {
+		reader := bufio.NewReader(os.Stdin)
+		fmt.Print("Enter text: ")
+		testStr, _ = reader.ReadString('\n')
+		// testStr := "Dalvik/1.6.0 (Linux; U; Android 4.4.4; Coolpad 8675-FHD MIUI/5.9.28)"
 	}
+
+	regexFile := "../uap-core/regexes.yaml"
+	// if len(os.Args) > 2 {
+	// 	regexFile = os.Args[2]
+	// }
 	parser, err := uaparser.New(regexFile)
 	if err != nil {
 		fmt.Println("Error:", err)
@@ -21,5 +35,6 @@ func main() {
 	fmt.Println(testStr)
 	fmt.Println("UserAgent: " + client.UserAgent.ToString())
 	fmt.Println("OS: " + client.Os.ToString())
+
 	fmt.Println("Device: " + client.Device.ToString())
 }
