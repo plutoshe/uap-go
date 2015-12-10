@@ -1,0 +1,1 @@
+cat identity | grep -B 4 Device: GENERIC | sort | uniq -c > analysis

@@ -1,0 +1,1 @@
+cat identity | grep Device: | sort | uniq -c > analysis
