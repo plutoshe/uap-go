@@ -35,6 +35,5 @@ func main() {
 	fmt.Println(testStr)
 	fmt.Println("UserAgent: " + client.UserAgent.ToString())
 	fmt.Println("OS: " + client.Os.ToString())
-
 	fmt.Println("Device: " + client.Device.ToString())
 }
