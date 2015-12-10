@@ -608,6 +608,9 @@ os_parsers:
   - regex: '(Android) Honeycomb'
     os_v1_replacement: '3'
 
+  - regex: '(Android) M'
+    os_v1_replacement: 'M'
+
   # UCWEB
   - regex: '^UCWEB.*; (Adr) (\d+)\.(\d+)(?:[.\-]([a-z0-9]+))?;'
     os_replacement: 'Android'
