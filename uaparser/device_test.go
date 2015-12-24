@@ -2,9 +2,10 @@ package uaparser
 
 import (
 	"fmt"
-	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"testing"
+
+	"gopkg.in/yaml.v2"
 )
 
 func getTestMap(file string) []map[string]string {

@@ -1598,8 +1598,13 @@ device_parsers:
   # Coolpad
   # @ref: ??
   #########
+  - regex: '; *([^;/]*)(?:Coolpad|coolpad)-Coolpad[ _]([^;/]+) Build'
+    device_replacement: 'Coolpad-$1$2'
+    brand_replacement: 'Coolpad'
+    model_replacement: '$1$2'
+
   - regex: '; *([^;/]*)Coolpad[ _]([^;/]+) Build'
-    device_replacement: 'Coolpad $1$2'
+    device_replacement: 'Coolpad-$1$2'
     brand_replacement: 'Coolpad'
     model_replacement: '$1$2'
 
@@ -2057,27 +2062,46 @@ device_parsers:
     brand_replacement: 'Huawei'
     model_replacement: '$1'
 
+  ##########
+  # Huawei
+  ##########
+  - regex: 'Huawei([A-Za-z0-9]+)'
+    device_replacement: 'Huawei $1'
+    brand_replacement: 'Huawei'
+    model_replacement: '$1'
+  - regex: 'HUAWEI-([A-Za-z0-9]+)'
+    device_replacement: 'Huawei $1'
+    brand_replacement: 'Huawei'
+    model_replacement: '$1'
+  - regex: 'vodafone([A-Za-z0-9]+)'
+    device_replacement: 'Huawei Vodafone $1'
+    brand_replacement: 'Huawei'
+    model_replacement: 'Vodafone $1'
+
+
+
   #########HuaWei personal uainfo
   - regex: '((?:HUAWEI|Huawei)[ \-]?)(MediaPad)_[A-Z]+/\d+.\d+'
-    device_replacement: '$1$2'
+    device_replacement: '$1 $2'
     brand_replacement: 'Huawei'
     model_replacement: '$2'
   - regex: '((?:HUAWEI[ _]?|Huawei[ _])?Ascend[ _])([^;/]+)_[A-Z]+/\d+.\d+'
-    device_replacement: '$1$2'
+    device_replacement: '$1 $2'
     brand_replacement: 'Huawei'
     model_replacement: '$2'
-  - regex: '((?:HUAWEI|Huawei)[ _\-]?)((?:G700-|MT-)[^;/]+)_[A-Z]+/\d+.\d+'
-    device_replacement: '$1$2'
+  - regex: '(?:HUAWEI|Huawei)[ _\-]?((?:G700-|MT-)[^;/]+)_[A-Z]+/\d+.\d+'
+    device_replacement: 'Huawei $1'
     brand_replacement: 'Huawei'
-    model_replacement: '$2'
-  - regex: '((?:HUAWEI|Huawei)[ _\-]?)([^;/]+)_TD/'
-    device_replacement: '$1$2'
+    model_replacement: '$1'
+  - regex: '(?:HUAWEI|Huawei)[ _\-]?([^;/]+)_TD/'
+    device_replacement: 'Huawei $1'
     brand_replacement: 'Huawei'
-    model_replacement: '$2'
-  - regex: '((?:HUAWEI|Huawei)[ _\-]?)([^;/]+)/'
-    device_replacement: '$1$2'
+    model_replacement: '$1'
+  - regex: '(?:HUAWEI|Huawei)[ _\-]?([^;/]+)/'
+    device_replacement: 'Huawei $1'
     brand_replacement: 'Huawei'
-    model_replacement: '$2'
+    model_replacement: '$1'
+
 
   #########
   # HTC
@@ -3859,16 +3883,13 @@ device_parsers:
   #########
   - regex: '; *([A-Z]{2,4})(M\d{3,}[A-Z]{2})([^;\)\/]*)(?: Build|[;\)])'
     device_replacement: 'Yifang $1$2$3'
-    brand_replacement: 'Yifang'
+    brand_replacement: 'Yifangdsfds'
     model_replacement: '$2'
 
   #########
   # XiaoMi
   # @ref: http://www.xiaomi.com/event/buyphone
   #########
-    device_replacement: 'XiaoMi $1'
-    brand_replacement: 'XiaoMi'
-    model_replacement: '$1'
   - regex: '; *((MI|HM|MI-ONE|Redmi|mi|hm|mi-one|redmi)[ -](NOTE |Note |note )?[^;/]*) Build/'
     device_replacement: 'XiaoMi $1'
     brand_replacement: 'XiaoMi'
@@ -4436,21 +4457,6 @@ device_parsers:
     brand_replacement: 'HTC'
     model_replacement: '$1'
 
-  ##########
-  # Huawei
-  ##########
-  - regex: 'Huawei([A-Za-z0-9]+)'
-    device_replacement: 'Huawei $1'
-    brand_replacement: 'Huawei'
-    model_replacement: '$1'
-  - regex: 'HUAWEI-([A-Za-z0-9]+)'
-    device_replacement: 'Huawei $1'
-    brand_replacement: 'Huawei'
-    model_replacement: '$1'
-  - regex: 'vodafone([A-Za-z0-9]+)'
-    device_replacement: 'Huawei Vodafone $1'
-    brand_replacement: 'Huawei'
-    model_replacement: 'Vodafone $1'
 
   ##########
   # i-mate
