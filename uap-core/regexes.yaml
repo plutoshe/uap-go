@@ -4816,3 +4816,15 @@ device_parsers:
     device_replacement: 'Generic Feature Phone'
     brand_replacement: 'Generic'
     model_replacement: 'Feature Phone'
+
+qqbrowser:
+  - regex: 'MQQBrowser/\d+.\d+'
+
+wechat:
+  - regex: 'MicroMessenger/\d+.\d+'
+
+qq:
+  - regex: 'QQ/\d+.\d+'
+
+weibo:
+  - regex: ' Weibo '

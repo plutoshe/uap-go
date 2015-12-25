@@ -36,4 +36,5 @@ func main() {
 	fmt.Println("UserAgent: " + client.UserAgent.ToString())
 	fmt.Println("OS: " + client.Os.ToString())
 	fmt.Println("Device: " + client.Device.ToString())
+	fmt.Println("Channel: ", client.Channel)
 }
