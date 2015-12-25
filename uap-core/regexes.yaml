@@ -3883,7 +3883,7 @@ device_parsers:
   #########
   - regex: '; *([A-Z]{2,4})(M\d{3,}[A-Z]{2})([^;\)\/]*)(?: Build|[;\)])'
     device_replacement: 'Yifang $1$2$3'
-    brand_replacement: 'Yifangdsfds'
+    brand_replacement: 'Yifang'
     model_replacement: '$2'
 
   #########
