@@ -1,3 +1,54 @@
+channel_parsers:
+
+# QQ Browser
+  - model: 'qq browser'
+    regex: 'MQQBrowser/\d+.\d+'
+
+  - model: 'qq browser'
+    user_agent_family: 'QQBrowser'
+
+# UC Browser
+  - model: 'uc browser'
+    user_agent_family: 'UC Browser'
+
+# Wechat
+  - model: 'wechat'
+    regex: 'MicroMessenger/\d+.\d+'
+
+# QQ
+  - model: 'qq'
+    regex: 'QQ/\d+.\d+'
+
+# Weibo
+  - model: 'weibo'
+    regex: ' Weibo '
+
+  - model: 'sougou search'
+    regex: ' SogouSearch '
+
+# windows cannot catch
+  - model: 'windows cannot catch'
+    user_agent_family: 'Maxthon Browser'
+
+  - model: 'windows cannot catch'
+    user_agent_family: 'LieBao Browser'
+
+  - model: 'windows cannot catch'
+    user_agent_family: '360 Browser'
+
+  - model: 'windows cannot catch'
+    user_agent_family: 'Opera'
+
+  - model: 'windows cannot catch'
+    user_agent_family: 'Firefox'
+
+# cannotdeeplink
+  - model: 'cannotdeeplink'
+    regex: 'Mozilla/6.0(Linux; Android 6.0; HUAWEI NXT-AL10 Build/HUAWEINXT-AL10) AppleWebKit/537.36(KHTML,like Gecko) Version/6.0 Mobile Safari/537.36'
+
+  - model: 'cannotdeeplink'
+    user_agent_family: 'Baidu Browser'
+
 user_agent_parsers:
   #### SPECIAL CASES TOP ####
 
@@ -121,6 +172,9 @@ user_agent_parsers:
   - regex: '(?:Mobile Safari).*(OPR)/(\d+)\.(\d+)\.(\d+)'
     family_replacement: 'Opera Mobile'
 
+  - regex: '(OPR)/(\d+)\.(\d+)\.(\d+)(\.\d+)? Mobile Safari/'
+    family_replacement: 'Opera Mobile'
+
   # Opera >=15 for Desktop is similar to Chrome but includes an "OPR" Version string.
   - regex: '(?:Chrome).*(OPR)/(\d+)\.(\d+)\.(\d+)'
     family_replacement: 'Opera'
@@ -204,6 +258,22 @@ user_agent_parsers:
   # Edge Mobile
   - regex: 'Windows Phone .*(Edge)/(\d+)\.(\d+)'
     family_replacement: 'Edge Mobile'
+
+  # Maxthon Browser
+  - regex: '(?:Chrome).*(MxBrowser)/(\d+)\.(\d+).(\d+).(\d+)'
+    family_replacement: 'Maxthon Browser Mobile'
+
+  # LieBao Browser
+  - regex: '(?:Chrome).*(LieBaoFast)/(\d+)\.(\d+).(\d+)'
+    family_replacement: 'LieBao Browser Mobile'
+
+  # 360 Browser
+  - regex: '(?:Chrome).*(360 Aphone Browser) \((\d+)\.(\d+).(\d+).(\d+)\)'
+    family_replacement: '360 Browser Mobile'
+
+  # Sogou Browser
+  - regex: '(SogouMobileBrowser)/(\d+)\.(\d+).(\d+)'
+    family_replacement: 'Sogou Browser Mobile'
 
   # Chrome Mobile
   - regex: '(CrMo)/(\d+)\.(\d+)\.(\d+)\.(\d+)'
@@ -4816,15 +4886,3 @@ device_parsers:
     device_replacement: 'Generic Feature Phone'
     brand_replacement: 'Generic'
     model_replacement: 'Feature Phone'
-
-qqbrowser:
-  - regex: 'MQQBrowser/\d+.\d+'
-
-wechat:
-  - regex: 'MicroMessenger/\d+.\d+'
-
-qq:
-  - regex: 'QQ/\d+.\d+'
-
-weibo:
-  - regex: ' Weibo '

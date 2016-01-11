@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"../uaparser" // You could change this to a github repo as well
+	"github.com/MISingularity/uap-go/uaparser" // You could change this to a github repo as well
 )
 
 func main() {

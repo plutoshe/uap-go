@@ -1,20 +1,31 @@
 package uaparser
 
-import "regexp"
+import (
+	"regexp"
+	"strings"
+)
 
 type Channel struct {
-	IsWeibo, IsWechat, IsQQ, IsQQBrowser bool
+	Params map[string]bool
 }
 
 type ChannelPattern struct {
-	Regexp *regexp.Regexp
-	Regex  string
+	Model           string
+	Regexp          *regexp.Regexp
+	Regex           string
+	UserAgentFamily string
+	MajorVersion    string
 }
 
-func (channelPattern *ChannelPattern) Match(line string) bool {
-	matches := channelPattern.Regexp.FindStringSubmatch(line)
-	if len(matches) == 0 {
-		return false
+func (channelPattern *ChannelPattern) Match(cli *Client, line string) bool {
+	if channelPattern.Regex != "" {
+		matches := channelPattern.Regexp.FindStringSubmatch(line)
+		if len(matches) != 0 {
+			return true
+		}
 	}
-	return true
+	if channelPattern.UserAgentFamily != "" && strings.Contains(cli.UserAgent.Family, channelPattern.UserAgentFamily) {
+		return true
+	}
+	return false
 }

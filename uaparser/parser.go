@@ -15,10 +15,10 @@ import (
 )
 
 type Parser struct {
-	UserAgentPatterns                                            []UserAgentPattern
-	OsPatterns                                                   []OsPattern
-	DevicePatterns                                               []DevicePattern
-	QQBrowserPatterns, QQPatterns, WechatPatterns, WeiboPatterns []ChannelPattern
+	UserAgentPatterns []UserAgentPattern
+	OsPatterns        []OsPattern
+	DevicePatterns    []DevicePattern
+	ChannelPatterns   []ChannelPattern
 }
 
 type Client struct {
@@ -128,51 +128,20 @@ func (parser *Parser) newFromBytes(data []byte) (*Parser, error) {
 		wg.Done()
 	}()
 
-	qqPatternType := new(ChannelPattern)
-	wechatPatternType := new(ChannelPattern)
-	weiboPatternType := new(ChannelPattern)
-	qqbrowserPatternType := new(ChannelPattern)
-	var weiboInterfaces, qqbrowserInterfaces, wechatInterfaces, qqInterfaces []interface{}
-	var weiboPatterns, qqbrowserPatterns, wechatPatterns, qqPatterns []ChannelPattern
+	channelPatternType := new(ChannelPattern)
+	var channelInterfaces []interface{}
+	var channelPatterns []ChannelPattern
 
 	wg.Add(1)
 	go func() {
-		ToStruct(m["qq"], *qqPatternType, &qqInterfaces)
-		qqPatterns = make([]ChannelPattern, len(qqInterfaces))
-		for i, inter := range qqInterfaces {
-			qqPatterns[i] = inter.(ChannelPattern)
+		ToStruct(m["channel_parsers"], *channelPatternType, &channelInterfaces)
+		channelPatterns = make([]ChannelPattern, len(channelInterfaces))
+		for i, inter := range channelInterfaces {
+			channelPatterns[i] = inter.(ChannelPattern)
 			flags := ""
 
-			regexString := fmt.Sprintf("%s%s", flags, qqPatterns[i].Regex)
-			qqPatterns[i].Regexp = regexp.MustCompile(regexString)
-		}
-		ToStruct(m["wechat"], *wechatPatternType, &wechatInterfaces)
-		wechatPatterns = make([]ChannelPattern, len(wechatInterfaces))
-		for i, inter := range wechatInterfaces {
-			wechatPatterns[i] = inter.(ChannelPattern)
-			flags := ""
-
-			regexString := fmt.Sprintf("%s%s", flags, wechatPatterns[i].Regex)
-			wechatPatterns[i].Regexp = regexp.MustCompile(regexString)
-		}
-
-		ToStruct(m["weibo"], *weiboPatternType, &weiboInterfaces)
-		weiboPatterns = make([]ChannelPattern, len(weiboInterfaces))
-		for i, inter := range weiboInterfaces {
-			weiboPatterns[i] = inter.(ChannelPattern)
-			flags := ""
-
-			regexString := fmt.Sprintf("%s%s", flags, weiboPatterns[i].Regex)
-			weiboPatterns[i].Regexp = regexp.MustCompile(regexString)
-		}
-		ToStruct(m["qqbrowser"], *qqbrowserPatternType, &qqbrowserInterfaces)
-		qqbrowserPatterns = make([]ChannelPattern, len(qqbrowserInterfaces))
-		for i, inter := range qqbrowserInterfaces {
-			qqbrowserPatterns[i] = inter.(ChannelPattern)
-			flags := ""
-
-			regexString := fmt.Sprintf("%s%s", flags, qqbrowserPatterns[i].Regex)
-			qqbrowserPatterns[i].Regexp = regexp.MustCompile(regexString)
+			regexString := fmt.Sprintf("%s%s", flags, channelPatterns[i].Regex)
+			channelPatterns[i].Regexp = regexp.MustCompile(regexString)
 		}
 		wg.Done()
 	}()
@@ -182,10 +151,7 @@ func (parser *Parser) newFromBytes(data []byte) (*Parser, error) {
 	parser.UserAgentPatterns = uaPatterns
 	parser.OsPatterns = osPatterns
 	parser.DevicePatterns = dvcPatterns
-	parser.WechatPatterns = wechatPatterns
-	parser.WeiboPatterns = weiboPatterns
-	parser.QQPatterns = qqPatterns
-	parser.QQBrowserPatterns = qqbrowserPatterns
+	parser.ChannelPatterns = channelPatterns
 
 	return parser, nil
 }
@@ -238,22 +204,14 @@ func (parser *Parser) ParseDevice(line string) *Device {
 	return dvc
 }
 
-func channelMatch(line string, Patterns *[]ChannelPattern) bool {
-	for _, Pattern := range *Patterns {
-		if Pattern.Match(line) {
-			return true
+func (parser *Parser) ParseChannel(cli *Client, line string) *Channel {
+	c := make(map[string]bool)
+	for _, Pattern := range parser.ChannelPatterns {
+		if Pattern.Match(cli, line) {
+			c[Pattern.Model] = true
 		}
 	}
-	return false
-}
-
-func (parser *Parser) ParseChannel(line string) *Channel {
-	c := new(Channel)
-	c.IsWechat = channelMatch(line, &parser.WechatPatterns)
-	c.IsQQ = channelMatch(line, &parser.QQPatterns)
-	c.IsWeibo = channelMatch(line, &parser.WeiboPatterns)
-	c.IsQQBrowser = channelMatch(line, &parser.QQBrowserPatterns)
-	return c
+	return &Channel{c}
 }
 
 func (parser *Parser) Parse(line string) *Client {
@@ -261,7 +219,9 @@ func (parser *Parser) Parse(line string) *Client {
 	cli.UserAgent = parser.ParseUserAgent(line)
 	cli.Os = parser.ParseOs(line)
 	cli.Device = parser.ParseDevice(line)
-	cli.Channel = parser.ParseChannel(line)
+
+	// Channel parser must after user agent parser, for channel judgement uses fields of user agent.
+	cli.Channel = parser.ParseChannel(cli, line)
 	return cli
 }
 

@@ -100,7 +100,8 @@ var uas = []struct {
 		isWeibo:     false,
 		isQQ:        false,
 		isQQBrowser: false,
-		uastring:    "Dalvik/1.6.0 (Linux; U; Android 4.4.4; MI 4LTE MIUI/5.11.19)",
+
+		uastring: "Dalvik/1.6.0 (Linux; U; Android 4.4.4; MI 4LTE MIUI/5.11.19)",
 	},
 	{
 		browser:     "Chrome",
@@ -109,13 +110,15 @@ var uas = []struct {
 		isWeibo:     false,
 		isQQ:        false,
 		isQQBrowser: false,
-		uastring:    "Mozilla/5.0 (Linux; Android 6.0; Nexus 6 Build/MRA58N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.95 Mobile Safari/537.36 MicroMessenger/6.3.7.51_rbb7fa12.660 NetType/WIFI Language/zh_CN",
+
+		uastring: "Mozilla/5.0 (Linux; Android 6.0; Nexus 6 Build/MRA58N; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.95 Mobile Safari/537.36 MicroMessenger/6.3.7.51_rbb7fa12.660 NetType/WIFI Language/zh_CN",
 	},
 	{
 		browser:  "Firefox",
 		isWechat: false,
 		isWeibo:  false,
 		isQQ:     false,
+
 		uastring: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:40.0) Gecko/20100101 Firefox/40.0",
 	},
 	{
@@ -132,7 +135,8 @@ var uas = []struct {
 		isQQ:        true,
 		isQQBrowser: false,
 
-		uastring: "Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12H143 QQ/6.1.0.496 Pixel/1080 NetType/WIFI Mem/49"},
+		uastring: "Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12H143 QQ/6.1.0.496 Pixel/1080 NetType/WIFI Mem/49",
+	},
 	{
 		isWechat:    true,
 		isWeibo:     false,
