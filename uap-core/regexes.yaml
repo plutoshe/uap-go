@@ -23,8 +23,12 @@ channel_parsers:
   - model: 'weibo'
     regex: ' Weibo '
 
-  - model: 'sougou search'
+  - model: 'sogou search'
     regex: ' SogouSearch '
+
+# Firefox
+  - model: 'firefox'
+    user_agent_family: 'Firefox'
 
 # windows cannot catch
   - model: 'windows cannot catch'
@@ -44,7 +48,7 @@ channel_parsers:
 
 # cannotdeeplink
   - model: 'cannotdeeplink'
-    regex: 'Mozilla/6.0(Linux; Android 6.0; HUAWEI NXT-AL10 Build/HUAWEINXT-AL10) AppleWebKit/537.36(KHTML,like Gecko) Version/6.0 Mobile Safari/537.36'
+    exact_match: 'Mozilla/6.0(Linux; Android 6.0; HUAWEI NXT-AL10 Build/HUAWEINXT-AL10) AppleWebKit/537.36(KHTML,like Gecko) Version/6.0 Mobile Safari/537.36'
 
   - model: 'cannotdeeplink'
     user_agent_family: 'Baidu Browser'
