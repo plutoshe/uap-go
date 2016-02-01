@@ -8481,34 +8481,34 @@ test_cases:
     model: 'W706+'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 2.3.5; Ug-; YL-Coolpad_5210S Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1'
-    family: 'Coolpad-YL-5210S'
+    family: 'Coolpad-5210S'
     brand: 'Coolpad'
-    model: 'YL-5210S'
+    model: '5210S'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 2.3.5; zh-cn; YL-Coolpad 5216 Build/GRJ90) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 baiduboxapp/042_1.7.3_diordna_008_084/gnoLuY_01_5.3.2_6125+daplooC-LY/1719b/69EC0294A0A3075734ECBBF65BF02AD8|CC906962300001A/1'
-    family: 'Coolpad-YL-5216'
+    family: 'Coolpad-5216'
     brand: 'Coolpad'
-    model: 'YL-5216'
+    model: '5216'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 2.3.5; zh-cn; YL-Coolpad 5218D Build/GRJ90) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
-    family: 'Coolpad-YL-5218D'
+    family: 'Coolpad-5218D'
     brand: 'Coolpad'
-    model: 'YL-5218D'
+    model: '5218D'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 2.3.5; zh-cn; YL-Coolpad_7230-B Build/GRJ90) AppleWebKit/533.1 (KHTML, like Gecko) FlyFlow/2.5 Version/4.0 Mobile Safari/533.1 baidubrowser/042_3.9.5.2_diordna_008_084/gnoLuY_01_5.3.2_B-0327/1721a/A13EABD4F145E1463FA10CCCC004DFD9|938639610381768/1'
-    family: 'Coolpad-YL-7230-B'
+    family: 'Coolpad-7230-B'
     brand: 'Coolpad'
-    model: 'YL-7230-B'
+    model: '7230-B'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 2.3.5; En-us; YL-Coolpad_7260 Build/GRJ90) AppleWebKit/533.1 (KHTML, Like Gecko) Version/4.0 Mobile Safari/533.1'
-    family: 'Coolpad-YL-7260'
+    family: 'Coolpad-7260'
     brand: 'Coolpad'
-    model: 'YL-7260'
+    model: '7260'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 2.3.5; zh-cn; YL-Coolpad_7260A Build/GRJ90) AppleWebKit/533.1 (KHTML, like Gecko) FlyFlow/2.1 Version/4.0 Mobile Safari/533.1'
-    family: 'Coolpad-YL-7260A'
+    family: 'Coolpad-7260A'
     brand: 'Coolpad'
-    model: 'YL-7260A'
+    model: '7260A'
 
   - user_agent_string: 'Opera/9.80 (Linux sh4; U; ; en; CreNova Build) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 HbbTV/1.1.1 (;CreNova;CNV001;1.0;1.0; FXM-U2FsdGVkX1+ck0PszsOkJ85Ph0dtmJlCmp7M2VZeoERwEwVagOkMaqjfAh8Gb7JU-END; en) Presto/2.9.167 Version/11.50'
     family: 'HbbTV'
@@ -22228,7 +22228,7 @@ test_cases:
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 3.2; de-de; Samsung Galaxy Tab Build/HuaweiMediaPad) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13'
     family: 'Samsung Galaxy Tab'
     brand: 'Huawei'
-    model: 'Samsung Galaxy Tab'
+    model: 'Galaxy Tab'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 2.3.7; fr-fr; STARTRAIL II Build/HuaweiU8655; CyanogenMod 7.2 Unofficial) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
     family: 'STARTRAIL II'
@@ -51481,12 +51481,12 @@ test_cases:
     model: 'Galaxy Note II'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; Android 4.0.4; Samsung Galaxy S2 Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19'
-    family: 'Samsung Samsung Galaxy S2'
+    family: 'Samsung Galaxy S2'
     brand: 'Samsung'
     model: 'Galaxy S2'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-; Samsung Galaxy S2 - 4.1.1 - API 16 - 480x800 Build/JRO03S) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
-    family: 'Samsung Samsung Galaxy S2 - 4.1.1 - API 16 - 480x800'
+    family: 'Samsung Galaxy S2 - 4.1.1 - API 16 - 480x800'
     brand: 'Samsung'
     model: 'Galaxy S2 - 4.1.1 - API 16 - 480x800'
 
@@ -51516,7 +51516,7 @@ test_cases:
     model: 'Galaxy S4'
 
   - user_agent_string: 'Dalvik/1.6.0 (Linux; U; Android 4.2.2; Samsung Galaxy S4  GT-I9500 Build/JDQ39)'
-    family: 'Samsung Samsung Galaxy S4  GT-I9500'
+    family: 'Samsung Galaxy S4  GT-I9500'
     brand: 'Samsung'
     model: 'Galaxy S4  GT-I9500'
 
@@ -51526,7 +51526,7 @@ test_cases:
     model: 'Galaxy S4  HTC One  Xperia Z - 4.2.2 - with Google Apps - API 17 - 1080x1920'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; Samsung Galaxy S4 - 4.2.2 - API 17 - 1080x1920 Build/JDQ39E) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
-    family: 'Samsung Samsung Galaxy S4 - 4.2.2 - API 17 - 1080x1920'
+    family: 'Samsung Galaxy S4 - 4.2.2 - API 17 - 1080x1920'
     brand: 'Samsung'
     model: 'Galaxy S4 - 4.2.2 - API 17 - 1080x1920'
 
@@ -51536,12 +51536,12 @@ test_cases:
     model: 'Galaxy S4 EX'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 4.3.1; de-de; Samsung Galaxy S4 Mega GT-I9200 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
-    family: 'Samsung Samsung Galaxy S4 Mega GT-I9200'
+    family: 'Samsung Galaxy S4 Mega GT-I9200'
     brand: 'Samsung'
     model: 'Galaxy S4 Mega GT-I9200'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; Android 4.2.2; Samsung Galaxy S4 Mini GT-I9505 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.99 Mobile Safari/537.36'
-    family: 'Samsung Samsung Galaxy S4 Mini GT-I9505'
+    family: 'Samsung Galaxy S4 Mini GT-I9505'
     brand: 'Samsung'
     model: 'Galaxy S4 Mini GT-I9505'
 
@@ -51556,7 +51556,7 @@ test_cases:
     model: 'Galaxy S5 spezial'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; Samsung Galaxy S6 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
-    family: 'Samsung Samsung Galaxy S6'
+    family: 'Samsung Galaxy S6'
     brand: 'Samsung'
     model: 'Galaxy S6'
 
@@ -51661,12 +51661,12 @@ test_cases:
     model: 'GT-N7200'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; Android 4.0.3; ar-tn; SAMSUNG SM-N9005 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36'
-    family: 'Samsung SAMSUNG SM-N9005'
+    family: 'Samsung SM-N9005'
     brand: 'Samsung'
     model: 'SM-N9005'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; Android 4.3; de-de; SAMSUNG SM-N9005-ORANGE Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36'
-    family: 'Samsung SAMSUNG SM-N9005-ORANGE'
+    family: 'Samsung SM-N9005-ORANGE'
     brand: 'Samsung'
     model: 'SM-N9005-ORANGE'
 
@@ -52101,9 +52101,9 @@ test_cases:
     model: 'EK-GN120'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 4.1.2; es-us; SAMSUNG GALAXY S2GT-I9100 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
-    family: 'Samsung GALAXY S2GT-I9100'
+    family: 'Samsung Galaxy S2GT-I9100'
     brand: 'Samsung'
-    model: 'GALAXY S2GT-I9100'
+    model: 'Galaxy S2GT-I9100'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; SAMSUNG GT Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
     family: 'Samsung GT'
@@ -52406,9 +52406,9 @@ test_cases:
     model: 'S4 aka MITO t510'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; Android 4.3; de-de; SAMSUNG Samsung Galaxy S III Build/GINGERBREAD) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36'
-    family: 'Samsung Samsung Galaxy S III'
+    family: 'Samsung Galaxy S III'
     brand: 'Samsung'
-    model: 'Samsung Galaxy S III'
+    model: 'Galaxy S III'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; Android 4.2.2; de-de; SAMSUNG SC-04E Build/JDQ39) AppleWebKit/535.19 (KHTML, like Gecko) Version/1.0 Chrome/18.0.1025.308 Mobile Safari/535.19'
     family: 'Samsung SC-04E'
@@ -53161,7 +53161,7 @@ test_cases:
     model: 'GT-P5220-ORANGE'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 3.1; cs-cz; SAMSUNG-GT-P7300/P7300BOKH5 Build/HMJ37) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13'
-    family: 'Samsung SAMSUNG-GT-P7300/P7300BOKH5'
+    family: 'Samsung GT-P7300/P7300BOKH5'
     brand: 'Samsung'
     model: 'GT-P7300'
 
@@ -53171,7 +53171,7 @@ test_cases:
     model: 'GT-P7300-ORANGE'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 3.2; bg-bg; SAMSUNG-GT-P7320/P7320XXLC4 Build/MASTER) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13'
-    family: 'Samsung SAMSUNG-GT-P7320/P7320XXLC4'
+    family: 'Samsung GT-P7320/P7320XXLC4'
     brand: 'Samsung'
     model: 'GT-P7320'
 
@@ -53181,7 +53181,7 @@ test_cases:
     model: 'GT-P7320-ORANGE'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 3.1; de-de; SAMSUNG-GT-P7500/P7500BUKG3 Build/HMJ37) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13'
-    family: 'Samsung SAMSUNG-GT-P7500/P7500BUKG3'
+    family: 'Samsung GT-P7500/P7500BUKG3'
     brand: 'Samsung'
     model: 'GT-P7500'
 
@@ -53191,7 +53191,7 @@ test_cases:
     model: 'GT-P7500-ORANGE'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 3.2; ar-ae; SAMSUNG-GT-P7501/P7501BUKL3 Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13'
-    family: 'Samsung SAMSUNG-GT-P7501/P7501BUKL3'
+    family: 'Samsung GT-P7501/P7501BUKL3'
     brand: 'Samsung'
     model: 'GT-P7501'
 
@@ -55391,82 +55391,82 @@ test_cases:
     model: 'I9600'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; SAMSUNG-GT-I8268_TD/1.0 Android/4.1.2 Release/11.15.2012 Browser/AppleWebKit534.30 Build/JRO03L) ApplelWebkit/534.30 (KHTML,like Gecko) Version/4.0 Mobile Safari/534.30'
-    family: 'Samsung SAMSUNG-GT-I8268'
+    family: 'Samsung GT-I8268'
     brand: 'Samsung'
     model: 'GT-I8268'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; Android 4.2.2; zh-cn; SAMSUNG-GT-I8558_TD/1.0 Android/4.2.2 Release/04.15.2013 Browser/AppleWebKit535.19 Build/JDQ39) ApplelWebkit/535.19 (KHTML, like Gecko) Version/1.0 Chrome/18.0.1025.308 Mobile Safari/535.19'
-    family: 'Samsung SAMSUNG-GT-I8558'
+    family: 'Samsung GT-I8558'
     brand: 'Samsung'
     model: 'GT-I8558'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; SAMSUNG-GT-I9128_TD/1.0 Android/4.1.2 Release/11.15.2012 Browser/AppleWebKit534.30 Build/JRO03L) ApplelWebkit/534.30 (KHTML,like Gecko) Version/4.0 Mobile Safari/534.30'
-    family: 'Samsung SAMSUNG-GT-I9128'
+    family: 'Samsung GT-I9128'
     brand: 'Samsung'
     model: 'GT-I9128'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn; SAMSUNG-GT-I9268_TD/1.0 Android/4.1.1 Release/08.30.2012 Browser/AppleWebKit534.30 Build/JRO03C) ApplelWebkit/534.30 (KHTML,like Gecko) Version/4.0 Mobile Safari/534.30'
-    family: 'Samsung SAMSUNG-GT-I9268'
+    family: 'Samsung GT-I9268'
     brand: 'Samsung'
     model: 'GT-I9268'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; Android 4.3; zh-cn; SAMSUNG-GT-I9308_TD/1.0 Android/4.3 Release/11.15.2013 Browser/AppleWebKit534.30 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
-    family: 'Samsung SAMSUNG-GT-I9308'
+    family: 'Samsung GT-I9308'
     brand: 'Samsung'
     model: 'GT-I9308'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; Android 4.2.2; de-de; SAMSUNG-GT-I9508_TD/1.0 Android/4.2.2 Release/03.15.2013 Browser/AppleWebKit535.19 Build/JDQ39) ApplelWebkit/535.19 (KHTML, like Gecko) Version/1.0 Chrome/18.0.1025.308 Mobile Safari/535.19'
-    family: 'Samsung SAMSUNG-GT-I9508'
+    family: 'Samsung GT-I9508'
     brand: 'Samsung'
     model: 'GT-I9508'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 4.1.1; de-de; SAMSUNG-GT-N7108_TD/1.0 Android/4.1.1 Release/08.30.2012 Browser/AppleWebKit534.30 Build/JRO03C) ApplelWebkit/534.30 (KHTML,like Gecko) Version/4.0 Mobile Safari/534.30'
-    family: 'Samsung SAMSUNG-GT-N7108'
+    family: 'Samsung GT-N7108'
     brand: 'Samsung'
     model: 'GT-N7108'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 4.2.2; zh-cn; SAMSUNG-GT-N7108D_TD/1.0 Android/4.2.2 Release/05.30.2013 Browser/AppleWebKit534.30 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'
-    family: 'Samsung SAMSUNG-GT-N7108D'
+    family: 'Samsung GT-N7108D'
     brand: 'Samsung'
     model: 'GT-N7108D'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 4.0.4; de-de; SAMSUNG-GT-S7568_TD/1.0 Android/4.0.4 Release/07.15.2012 Browser/AppleWebKit534.30 Build/IMM76D) ApplelWebkit/534.30 (KHTML,like Gecko) Version/4.0 Mobile Safari/534.30'
-    family: 'Samsung SAMSUNG-GT-S7568'
+    family: 'Samsung GT-S7568'
     brand: 'Samsung'
     model: 'GT-S7568'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 4.1.2; zh-cn; SAMSUNG-GT-S7568i_TD/1.0 Android/4.1.2 Release/07.15.2013 Browser/AppleWebKit534.30 Build/JRO03L) ApplelWebkit/534.30 (KHTML,like Gecko) Version/4.0 Mobile Safari/534.30'
-    family: 'Samsung SAMSUNG-GT-S7568i'
+    family: 'Samsung GT-S7568i'
     brand: 'Samsung'
     model: 'GT-S7568i'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; SAMSUNG-GT-S7898_TD/1.0 Android/4.1.2 Release/11.15.2012 Browser/AppleWebKit534.30 Build/JRO03L) ApplelWebkit/534.30 (KHTML,like Gecko) Version/4.0 Mobile Safari/534.30'
-    family: 'Samsung SAMSUNG-GT-S7898'
+    family: 'Samsung GT-S7898'
     brand: 'Samsung'
     model: 'GT-S7898'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 2.1-update1; de-at; SAMSUNG-SGH-I897/I897UCJH7 Build/ECLAIR) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17'
-    family: 'Samsung SAMSUNG-SGH-I897'
+    family: 'Samsung SGH-I897'
     brand: 'Samsung'
     model: 'SGH-I897'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 4.1.2; zh-cn; SAMSUNG-SM-G3508I_TD/1.0 Android/4.1.2 Release/10.15.2013 Browser/AppleWebKit534.30 Build/JZO54K) AppleWebkit/534.30 (KHTML,like Gecko) Version/4.0 Mobile Safari/534.30'
-    family: 'Samsung SAMSUNG-SM-G3508I'
+    family: 'Samsung SM-G3508I'
     brand: 'Samsung'
     model: 'SM-G3508I'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; Android 4.3; zh-cn; SAMSUNG-SM-G7108_TD Release/08.30.2013 Browser/AppleWebKit537.36 Build/JSS15J) AppleWebkit/537.36 (KHTML, like Gecko) Version/1.5 Mobile Safari/537.36'
-    family: 'Samsung SAMSUNG-SM-G7108'
+    family: 'Samsung SM-G7108'
     brand: 'Samsung'
     model: 'SM-G7108'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; Android 4.3; zh-cn; SAMSUNG-SM-N9008_TD Release/08.30.2013 Browser/AppleWebKit537.36 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Mobile Safari/537.36'
-    family: 'Samsung SAMSUNG-SM-N9008'
+    family: 'Samsung SM-N9008'
     brand: 'Samsung'
     model: 'SM-N9008'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; Android 4.3; zh-cn; SAMSUNG-SM-N9008V_TD Release/11.15.2013 Browser/AppleWebKit537.36 Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Mobile Safari/537.36'
-    family: 'Samsung SAMSUNG-SM-N9008V'
+    family: 'Samsung SM-N9008V'
     brand: 'Samsung'
     model: 'SM-N9008V'
 
@@ -58583,7 +58583,7 @@ test_cases:
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; Samsung EPIC SPH-700 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'
     family: 'Samsung EPIC'
     brand: 'Samsung'
-    model: 'EPIC'
+    model: 'EPIC SPH'
 
   - user_agent_string: '(samsung/espresso10rf/GT-P5100)API 15. Language Deutsch'
     family: 'Samsung espresso10rf'
@@ -58646,14 +58646,14 @@ test_cases:
     model: 'galaxy'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; Android 4.0.4; Samsung Galaxy Ace Duos S6802 Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.64 Mobile Safari/537.36'
-    family: 'Samsung Galaxy'
+    family: 'Samsung Galaxy Ace Duos S6802'
     brand: 'Samsung'
-    model: 'Galaxy'
+    model: 'Galaxy Ace Duos S6802'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; Android 4.4; Samsung GALAXY Note 3 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.136 Mobile Safari/537.36'
-    family: 'Samsung GALAXY'
+    family: 'Samsung Galaxy Note 3'
     brand: 'Samsung'
-    model: 'GALAXY'
+    model: 'Galaxy Note 3'
 
   - user_agent_string: 'Samsung Gem Android_SDK'
     family: 'Samsung Gem'
@@ -60311,7 +60311,7 @@ test_cases:
     model: 'GT-P7500'
 
   - user_agent_string: 'Mozilla/5.0 (Linux; U; Android 3.2; de-de; SAMSUNG-GT-P7501/P7501BOLA1 Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13'
-    family: 'Samsung SAMSUNG-GT-P7501/P7501BOLA1'
+    family: 'Samsung GT-P7501/P7501BOLA1'
     brand: 'Samsung'
     model: 'GT-P7501'
 
@@ -62145,75 +62145,70 @@ test_cases:
     brand: 'Samsung'
     model: 'sam-r900'
 
-  - user_agent_string: 'SAMSUNG SAMSUNG SyncML_DS Client'
-    family: 'Samsung SAMSUNG'
-    brand: 'Samsung'
-    model: 'SAMSUNG'
-
   - user_agent_string: 'Y.Afisha4Android 1.11 (samsung; samsung/m0xx/m0:4.1.2/JZO54K/I9300XXELL4:user/release-keys; Android v4.1.2; ru_RU)'
     family: 'Samsung samsung'
     brand: 'Samsung'
     model: 'samsung'
 
   - user_agent_string: 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5250/1.0; U; bada/1.0; es) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 OPN-B'
-    family: 'Samsung SAMSUNG-GT-S5250'
+    family: 'Samsung GT-S5250'
     brand: 'Samsung'
-    model: 'SAMSUNG-GT-S5250'
+    model: 'GT-S5250'
 
-  - user_agent_string: 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5330'
-    family: 'Samsung SAMSUNG-GT-S5330'
+  - user_agent_string: 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5330/1.0;'
+    family: 'Samsung GT-S5330'
     brand: 'Samsung'
-    model: 'SAMSUNG-GT-S5330'
+    model: 'GT-S5330'
 
-  - user_agent_string: 'MOZILLA50 (SAMSUNG SAMSUNG-GT-S7230'
-    family: 'Samsung SAMSUNG-GT-S7230'
+  - user_agent_string: 'MOZILLA50 (SAMSUNG SAMSUNG-GT-S7230/1.0;'
+    family: 'Samsung GT-S7230'
     brand: 'Samsung'
-    model: 'SAMSUNG-GT-S7230'
+    model: 'GT-S7230'
 
   - user_agent_string: 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8500/1.0; U; Linux/SLP/2.0; ko-kr) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile,gzip(gfe),gzip(gfe)'
-    family: 'Samsung SAMSUNG-GT-S8500'
+    family: 'Samsung GT-S8500'
     brand: 'Samsung'
-    model: 'SAMSUNG-GT-S8500'
+    model: 'GT-S8500'
 
   - user_agent_string: 'Instagram 3.0.5 Android (10/2.3.6; 320dpi; 800x1280; samsung; SAMSUNG-SGH-I717; SGH-I717; qcom; en)'
-    family: 'Samsung SAMSUNG-SGH-I717'
+    family: 'Samsung SGH-I717'
     brand: 'Samsung'
-    model: 'SAMSUNG-SGH-I717'
+    model: 'SGH-I717'
 
   - user_agent_string: 'Instagram 1.1.3 Android (10/2.3.6; 240dpi; 480x800; samsung; SAMSUNG-SGH-I727; SGH-I727; qcom; en_US)'
-    family: 'Samsung SAMSUNG-SGH-I727'
+    family: 'Samsung SGH-I727'
     brand: 'Samsung'
-    model: 'SAMSUNG-SGH-I727'
+    model: 'SGH-I727'
 
   - user_agent_string: 'Instagram 3.0.5 Android (10/2.3.6; 240dpi; 480x800; samsung; SAMSUNG-SGH-I777; SGH-I777; smdkc210; en_US)'
-    family: 'Samsung SAMSUNG-SGH-I777'
+    family: 'Samsung SGH-I777'
     brand: 'Samsung'
-    model: 'SAMSUNG-SGH-I777'
+    model: 'SGH-I777'
 
   - user_agent_string: 'YahooMobileMessenger/1.0 (Android Messenger; 1.4) (SGH-I897; samsung; SAMSUNG-SGH-I897; 2.2/FROYO)'
-    family: 'Samsung SAMSUNG-SGH-I897'
+    family: 'Samsung SGH-I897'
     brand: 'Samsung'
-    model: 'SAMSUNG-SGH-I897'
+    model: 'SGH-I897'
 
   - user_agent_string: 'Instagram 3.0.5 Android (10/2.3.6; 240dpi; 480x800; samsung; SAMSUNG-SGH-I927; SGH-I927; n1; en_US)'
-    family: 'Samsung SAMSUNG-SGH-I927'
+    family: 'Samsung SGH-I927'
     brand: 'Samsung'
-    model: 'SAMSUNG-SGH-I927'
+    model: 'SGH-I927'
 
   - user_agent_string: 'YahooMobileMessenger/1.0 (Android Mail; 1.3.9) (SGH-I997; samsung; SAMSUNG-SGH-I997; 2.2.1/FROYO)'
-    family: 'Samsung SAMSUNG-SGH-I997'
+    family: 'Samsung SGH-I997'
     brand: 'Samsung'
-    model: 'SAMSUNG-SGH-I997'
+    model: 'SGH-I997'
 
   - user_agent_string: 'samsung SAMSUNG-SM-G900A SyncML_DM Client'
-    family: 'Samsung SAMSUNG-SM-G900A'
+    family: 'Samsung SM-G900A'
     brand: 'Samsung'
-    model: 'SAMSUNG-SM-G900A'
+    model: 'SM-G900A'
 
   - user_agent_string: 'Mozilla/5.0 (SAMSUNG; SAMSUNG-SMART-TV; U; Linux/SmartTV) AppleWebKit/531.2+ (KHTML, like Gecko) WebBrowser/1.0 SmartTV Safari/531.2+'
-    family: 'Samsung SAMSUNG-SMART-TV'
+    family: 'Samsung SMART-TV'
     brand: 'Samsung'
-    model: 'SAMSUNG-SMART-TV'
+    model: 'SMART-TV'
 
   - user_agent_string: '(samsung/santos103g/GT-P5200)API 17. Language Deutsch'
     family: 'Samsung santos103g'

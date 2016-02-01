@@ -133,7 +133,7 @@ var uas = []struct {
 		uastring: "Mozilla/5.0 (Linux; Android 6.0; HUAWEI NXT-AL10 Build/HUAWEINXT-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.95 Mobile Safari/537.36 LieBaoFast/3.25.7 ",
 	},
 	{
-		params:   map[string]bool{"windows cannot catch": true},
+		params:   map[string]bool{"cannot go market": true},
 		uastring: "Mozilla/5.0 (Linux; Android 6.0; HUAWEI NXT-AL10 Build/HUAWEINXT-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.95 Mobile Safari/537.36 MxBrowser/4.5.6.1000 ",
 	},
 	{
