@@ -20,11 +20,15 @@ type DevicePattern struct {
 	ModelReplacement  string
 }
 
+var RegexPattern = ""
+
 func (dvcPattern *DevicePattern) Match(line string, dvc *Device) {
 	matches := dvcPattern.Regexp.FindStringSubmatch(line)
 	if len(matches) == 0 {
 		return
 	}
+	// fmt.Println(dvcPattern)
+	RegexPattern = dvcPattern.Regex
 	groupCount := dvcPattern.Regexp.NumSubexp()
 
 	if len(dvcPattern.DeviceReplacement) > 0 {
@@ -33,6 +37,9 @@ func (dvcPattern *DevicePattern) Match(line string, dvc *Device) {
 		dvc.Family = matches[1]
 	}
 	dvc.Family = strings.TrimSpace(dvc.Family)
+	if strings.Contains(dvc.Family, "SonyEricsson") {
+		dvc.Family = strings.Replace(dvc.Family, "SonyEricsson", "Sony", -1)
+	}
 
 	if len(dvcPattern.BrandReplacement) > 0 {
 		dvc.Brand = allMatchesReplacement(dvcPattern.BrandReplacement, matches)
@@ -40,6 +47,9 @@ func (dvcPattern *DevicePattern) Match(line string, dvc *Device) {
 		dvc.Brand = matches[1]
 	}
 	dvc.Brand = strings.TrimSpace(dvc.Brand)
+	if dvc.Brand == "SonyEricsson" {
+		dvc.Brand = "Sony"
+	}
 
 	if len(dvcPattern.ModelReplacement) > 0 {
 		dvc.Model = allMatchesReplacement(dvcPattern.ModelReplacement, matches)
